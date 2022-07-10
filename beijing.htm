@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+<title>beijing</title>
+<link href="firstpage.css" rel="stylesheet"type="text/css">
+</head>
+<body>
+<div id="container02">
+   <ul id="ul011">
+      <li id="li0101"><a href="index.htm">首页</a></li>
+      <li id="li0101"><a href="beijing.htm">作品背景</a></li>
+      <li id="li0101"><a href="beijing.htm">故事简介</a></li>
+      <li id="li0101"><a href="juese.htm">角色介绍</a></li>
+      <li id="li0101"><a href="sheding.htm">设定用语</a></li>
+      <li id="li0101"><a href="zuopin.htm">关联作品</a></li>
+      <li id="li0101"><a href="baogao.html">结业报告</a></li>
+      </ul>
+<div id="header02">
+</div> 
+<div id="mainbody03">
+<h1>作品背景</h1>
+<p id="p03">《夏目友人帐》是绿川幸<br>创作在漫画杂志《LaLa》<br>上连载的一部
+    治愈系漫画<br>作品。2003年在《LaLa<br> DX》
+    上连载，2007年10<br>月转至《LaLa》。</p>
+
+<div class="bannerbox">
+<script type="text/javascript">
+function flashBoxCtrl(o){
+this.obj=document.getElementById(o);
+function addListener(ele,eventName,functionBody){
+  if (ele.attachEvent){
+    ele.attachEvent("on"+eventName, functionBody);
+  }else if (ele.addEventListener){
+    ele.addEventListener("on"+eventName,functionBody, false);
+  }else{
+    return false;
+  }
+}
+this.init=function(){
+  var objImg=this.obj.getElementsByTagName("img");
+  var tagLength=objImg.length;
+  if (tagLength>0){
+    var oUl=document.createElement("ul");
+    oUl.setAttribute("id",o+"numTag");
+    for (var i=0;i<tagLength;i++){
+      var oLi=oUl.appendChild(document.createElement("li"));
+      if (i==0){
+        oLi.setAttribute("class","hover");
+        oLi.setAttribute("className","hover");
+        }
+      oLi.appendChild(document.createTextNode((i+1)));
+      }
+this.obj.appendChild(oUl);
+    objImg[0].style.display="block";
+    var oTag=this.obj.getElementsByTagName("li");
+      for (var i=0;i<oTag.length;i++){
+    var flag = 0;
+    var temp = 0;
+    var timeout=null;
+    var step = function(){
+      for (j=0;j<oTag.length;j++){
+        oTag[j].className="";
+        objImg[j].style.display="none";
+        }
+      this.className="hover";
+      flag = flag>=oTag.length-1?0:flag+1;
+      objImg[flag].style.display="block";
+      oTag[flag].className = "hover";
+      timeout = setTimeout(step,4000);
+        };
+      oTag[i].onmouseover=function(){
+      for (j=0;j<oTag.length;j++){
+        oTag[j].className="";
+        objImg[j].style.display="none";
+        temp = j;
+        }
+      this.className="hover";
+      objImg[this.innerHTML-1].style.display="block";
+      temp = this.innerHTML-1;
+      flag = i;
+      clearInterval(timeout);
+        }
+      oTag[i].onmouseout = function(){
+        for (j=0;j<oTag.length;j++){
+        oTag[j].className="";
+        objImg[j].style.display="none";
+          }
+        flag = temp;
+        objImg[temp].style.display="block";
+        oTag[temp].className = "hover";
+        timeout = setTimeout(step,4000);
+          }
+        if(i==0)
+      {
+      timeout = setTimeout(step,4000);
+      }
+      }
+    }
+  };
+this.imgRoll=function(){};
+this.init();
+}
+</script>
+<div id="flashbox">
+<a href="https://baike.baidu.com/pic/%E5%A4%8F%E7%9B%AE%E5%8F%8B%E4%BA%BA%E5%B8%90/27649/2625522703/43e6c733f2334a10ac4b5f5e?fr=lemma&ct=cover#aid=2625522703&pic=43e6c733f2334a10ac4b5f5e"><img src="pic/manhua1.jpg"></a>
+<a href="https://baike.baidu.com/pic/%E5%A4%8F%E7%9B%AE%E5%8F%8B%E4%BA%BA%E5%B8%90/27649/2625522703/43e6c733f2334a10ac4b5f5e?fr=lemma&ct=cover#aid=2625522703&pic=d0526df0bda4c1fca50f525e"><img src="pic/manhua2.jpg"></a>
+<a href="https://baike.baidu.com/pic/%E5%A4%8F%E7%9B%AE%E5%8F%8B%E4%BA%BA%E5%B8%90/27649/2625522703/43e6c733f2334a10ac4b5f5e?fr=lemma&ct=cover#aid=2625522703&pic=8c511fe9f5a7ba6cb90e2d5f"><img src="pic/manhua3.jpg"></a>
+<a href="https://baike.baidu.com/pic/%E5%A4%8F%E7%9B%AE%E5%8F%8B%E4%BA%BA%E5%B8%90/27649/2625522703/43e6c733f2334a10ac4b5f5e?fr=lemma&ct=cover#aid=2625522703&pic=7c5fcc1b2a538086ac6e755f"><img src="pic/manhua4.jpg"></a>
+<a href="https://baike.baidu.com/pic/%E5%A4%8F%E7%9B%AE%E5%8F%8B%E4%BA%BA%E5%B8%90/27649/2625522703/43e6c733f2334a10ac4b5f5e?fr=lemma&ct=cover#aid=2625522703&pic=a992e31f45920c59314e155e"><img src="pic/manhua5.jpg"></a>
+</div>
+<script language="Javascript">new flashBoxCtrl("flashbox");</script>
+  </div> 
+</div> 
+
+<div id="mainbody04">
+<h1>故事简介</h1>
+<br>
+<br>
+<br>
+<br>
+ <video width="600" height="300"controls="controls" src="jieshao.MP4" type="video/mp4">
+  </video>
+   <div id="mainbody041">
+<p id="p04">夏目贵志生来拥有强大灵力，能看到妖怪和神明的存在。因其父母双亡，常年辗转
+于互相推卸责任的亲戚之间，并受到同龄人的欺负。同时被其能力影响，未曾与任何人
+深交，造成性格上有一定程度的孤僻。本性和善，宽厚，踏实。对于自身的不幸，无论
+是对人类还是妖怪都为曾抱怨过。被藤原夫妇收养后踏入高中。一次被妖怪追赶打破了
+一只妖怪“斑”的封印，继而牵涉到其祖母夏目玲子的遗物“友人帐”————一本记录着众多
+妖怪名字的契约书。对友人帐产生兴趣的“斑”与贵志定下约定，自己守护其一生以替换
+友人帐的所有权，平时则化身成大头招财猫模样的“猫咪老师”。在“斑”的陪伴、八原妖怪
+和同学们的关心鼓励下，贵志经历了一个个或奇异、悲伤、感怀的怪诞故事，并逐渐学
+会与人类、妖怪友好相处，谱写出一段充满人性哲思的温馨物语。</p>
+</div>
+<div id="body041"></div>
+</div>
+
+
+<div id="mainbody042"></div>
+
+ <div id="footer02">
+<h1 id="h2">《夏目友人帐》原创网页</h1>
+<P id="p2">版权所有&copy;重庆交通大学|信息科学与工程学院|计算机4班|潘建中</p>
+</div>
+
+</div>
+</body>
+</html>
